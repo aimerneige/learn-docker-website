@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn Docker interactively: animated concepts and a live Dockerfile / Compose playground." />
+    <title>Learn Docker · Interactive</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d63ed'/%3E%3Cg fill='%23fff'%3E%3Crect x='12' y='26' width='9' height='8' rx='1.5'/%3E%3Crect x='23' y='26' width='9' height='8' rx='1.5'/%3E%3Crect x='34' y='26' width='9' height='8' rx='1.5'/%3E%3Crect x='23' y='16' width='9' height='8' rx='1.5'/%3E%3Cpath d='M8 37h48c-2 10-11 15-24 15S10 47 8 37z'/%3E%3C/g%3E%3C/svg%3E" />
+    <script>
+      // Apply the saved/system theme before first paint to avoid a flash.
+      (function () {
+        try {
+          var t = localStorage.getItem('ld-theme');
+          if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
